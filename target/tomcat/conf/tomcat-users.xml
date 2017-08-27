@@ -16,6 +16,15 @@
   limitations under the License.
 -->
 <tomcat-users>
+    <role rolename="manager-gui" />
+    <role rolename="manager-status" />
+    <role rolename="manager-jmx" />
+    <role rolename="manager-script"/>
+    <role rolename="admin-gui"/>
+    <role rolename="admin-script"/>
+
+    <user username="tomcat" password="tomcat123" roles="manager-gui,manager-status,manager-jmx,manager-script,admin-gui,admin-script"/>
+
 <!--
   <role rolename="tomcat"/>
   <role rolename="role1"/>
